@@ -8,7 +8,7 @@ function Hero() {
     >
       <div className="max-w-6xl mx-auto w-full">
         <p className="opacity-0 animate-rise font-mono text-xs text-text-muted uppercase tracking-[0.2em] mb-6">
-          Rodrigo Machaca Aruquipa
+          Beimar Rodrigo Machaca Aruquipa
         </p>
 
         <h1 className="opacity-0 animate-rise-1 text-5xl sm:text-7xl md:text-8xl font-bold text-text leading-[0.92] tracking-tight mb-8">

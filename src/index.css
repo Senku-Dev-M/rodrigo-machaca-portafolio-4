@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #07070F;
+  --color-surface: #0C0C18;
+  --color-elevated: #121220;
+  --color-overlay: #1A1A2E;
+  --color-border: #1E1E3A;
+
+  --color-accent: #4A7CFF;
+  --color-accent-soft: #3A66DD;
+  --color-accent-subtle: rgba(74, 124, 255, 0.08);
+
+  --color-text: #E8ECF4;
+  --color-text-soft: #8A94B8;
+  --color-text-muted: #485078;
+  --color-success: #22C55E;
+
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+
+  --animate-fade: fadeIn 0.4s ease-out forwards;
+  --animate-rise: riseUp 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  --animate-rise-1: riseUp 0.5s cubic-bezier(0.16, 1, 0.3, 1) 0.12s forwards;
+  --animate-rise-2: riseUp 0.5s cubic-bezier(0.16, 1, 0.3, 1) 0.24s forwards;
+  --animate-rise-3: riseUp 0.5s cubic-bezier(0.16, 1, 0.3, 1) 0.36s forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes riseUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+body {
+  margin: 0;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+}
